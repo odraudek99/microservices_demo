@@ -3,10 +3,10 @@
 microservices_demo
 
 ##starup:
-*cd config; mvn spring-boot:run
-*cd registry; mvn spring-boot:run
-*cd gateway; mvn spring-boot:run
-*cd demo; mvn spring-boot:run
+* cd config; mvn spring-boot:run
+* cd registry; mvn spring-boot:run
+* cd gateway; mvn spring-boot:run
+* cd demo; mvn spring-boot:run
 
 ## URL
 
