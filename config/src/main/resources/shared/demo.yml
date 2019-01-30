@@ -1,0 +1,16 @@
+server:
+  port: 8228
+
+variables:
+  eureka:
+    host: localhost
+    port: 8761
+    
+    
+eureka:
+  instance:
+    prefer-ip-address: false
+  client:
+    serviceUrl:
+      defaultZone: http://${variables.eureka.host}:${variables.eureka.port}/eureka/
+      

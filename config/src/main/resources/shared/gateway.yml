@@ -1,0 +1,21 @@
+
+server:
+  port: 7777
+
+  
+variables:
+  eureka:
+    host: localhost
+    port: 8761
+    
+#zuul:
+#  routes:
+#    path: /demo/*
+#    serviceId: demo
+    
+eureka:
+  instance:
+    prefer-ip-address: false
+  client:
+    serviceUrl:
+      defaultZone: http://${variables.eureka.host}:${variables.eureka.port}/eureka/
